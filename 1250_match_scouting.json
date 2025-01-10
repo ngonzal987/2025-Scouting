@@ -1,0 +1,184 @@
+[
+    {
+        "type": "h2",
+        "label": "Autonomous",
+        "id": "autonomouslbl"
+    },
+    {
+        "type": "multiselect",
+        "label": "Starting Position",
+        "options": ["Not There", "Processor Side", "Middle", "Cage Side"],
+        "id": "startingPosition"
+    },
+    {
+        "type": "checkbox",
+        "label": "Did they leave the starting zone?",
+        "id": "didLeaveStartingZone"
+    },
+    {
+        "type": "h3",
+        "label": "Coral",
+        "id": "autocorallbl"
+    },
+    {
+        "type": "counter",
+        "label": "Coral scored on L4",
+        "id": "autoCoralL4"
+    },
+    {
+        "type": "counter",
+        "label": "Coral scored on L3",
+        "id": "autoCoralL3"
+    },
+    {
+        "type": "counter",
+        "label": "Coral scored on L2",
+        "id": "autoCoralL2"
+    },
+    {
+        "type": "counter",
+        "label": "Coral scored on L1",
+        "id": "autoCoralL1"
+    },
+    {
+        "type": "h3",
+        "label": "Algae",
+        "id": "autoalgaelbl"
+    },
+    {
+        "type": "counter",
+        "label": "Algae scored in processor",
+        "id": "autoAlgaeProcessor"
+    },
+    {
+        "type": "counter",
+        "label": "Algae scored in barge",
+        "id": "autoAlgaeBarge"
+    },
+    {
+        "type": "spacer"
+    },
+    {
+        "type": "h2",
+        "label": "Teleoperated",
+        "id": "teleoplbl"
+    },
+    {
+        "type": "h3",
+        "label": "Coral",
+        "id": "teleopcorallbl"
+    },
+    {
+        "type": "counter",
+        "label": "Coral scored on L4",
+        "id": "teleopCoralL4"
+    },
+    {
+        "type": "counter",
+        "label": "Coral scored on L3",
+        "id": "teleopCoralL3"
+    },
+    {
+        "type": "counter",
+        "label": "Coral scored on L2",
+        "id": "teleopCoralL2"
+    },
+    {
+        "type": "counter",
+        "label": "Coral scored on L1",
+        "id": "teleopCoralL1"
+    },
+    {
+        "type": "h3",
+        "label": "Algae",
+        "id": "teleopalgaelbl"
+    },
+    {
+        "type": "counter",
+        "label": "Algae scored in processor",
+        "id": "teleopAlgaeProcessor"
+    },
+    {
+        "type": "counter",
+        "label": "Algae thrown into the barge by human",
+        "id": "algaeThrownIntoBarge"
+    },
+    {
+        "type": "counter",
+        "label": "Algae scored in barge by robot",
+        "id": "teleopAlgaeBarge"
+    },
+    {
+        "type": "h3",
+        "label": "Defense and Fouls",
+        "id": "dandflbl"
+    },
+    {
+        "type": "checkbox",
+        "label": "Robot played defense",
+        "id": "didDefense"
+    },
+    {
+        "type": "counter",
+        "label": "Total minor fouls",
+        "id": "totalMinorFouls"
+    },
+    {
+        "type": "counter",
+        "label": "Total major fouls",
+        "id": "totalMajorFouls"
+    },
+    {
+        "type": "spacer"
+    },
+    {
+        "type": "h2",
+        "label": "Endgame",
+        "id": "endgameLbl"
+    },
+    {
+        "type": "slider",
+        "label": "How much time was on the clock when they started climbing?",
+        "options": {"min": 0, "max": 150, "step": 5},
+        "id": "climbingStartTime"
+    },
+    {
+        "type": "multiselect",
+        "label": "Barge Status",
+        "options": ["Not Parked", "Parked", "Shallow Cage", "Deep Cage"],
+        "id": "bargeStatus"
+    },
+    {
+        "type": "spacer"
+    },
+    {
+        "type": "h2",
+        "label": "General",
+        "id": "generalLbl"
+    },
+    {
+        "type": "checkbox",
+        "label": "Died during the match (or never started)?",
+        "id": "diedDuringMatch"
+    },
+    {
+        "type": "checkbox",
+        "label": "Recovered from freeze?",
+        "id": "recoveredFromFreeze"
+    },
+    {
+        "type": "counter",
+        "label": "Total yellow cards",
+        "id": "totalYellowCards"
+    },
+    {
+        "type": "checkbox",
+        "label": "Did they get a red card?",
+        "id": "didRedCard"
+    },
+    {
+        "type": "textblock",
+        "label": "Other comments and notes",
+        "id": "commentsNotes"
+    }
+]

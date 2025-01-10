@@ -1,0 +1,75 @@
+[
+  {
+    "type": "h2",
+    "label": "Drive Base",
+    "id": "driveBase"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "multiselect",
+    "label": "Drive base type",
+    "id": "driveBaseType",
+    "options": [
+      "Swerve",
+      "Tank",
+      "Other" 
+    ]
+  },
+  {
+    "type": "slider",
+    "label": "Drive Base Length with bumpers on (inches)",
+    "id": "driveBaseLength",
+    "options": {
+      "min": 20,
+      "max": 40,
+      "step": 1
+    }
+  },
+  {
+    "type": "slider",
+    "label": "Drive Base Width with bumpers on (inches)",
+    "id": "driveBaseWidth",
+    "options": {
+      "min": 20,
+      "max": 40,
+      "step": 1
+    }
+  },
+  {
+    "type": "slider",
+    "label": "Robot Height (inches)",
+    "id": "robotHeight",
+    "options": {
+      "min": 20,
+      "max": 100,
+      "step": 1
+    }
+  },
+  {
+    "type": "slider",
+    "label": "Robot Weight (lbs)",
+    "id": "robotWeight",
+    "options": {
+      "min": 70,
+      "max": 150,
+      "step": 1
+    }
+  },
+  {
+    "type": "slider",
+    "label": "Quality of bumpers?",
+    "id": "bumperQuality",
+    "options": {
+      "min": 1,
+      "max": 5,
+      "step": 1
+    }
+  },
+  {
+    "type": "textblock",
+    "label": "How friendly is the team?",
+    "id": "howFriendly"
+  }
+]
