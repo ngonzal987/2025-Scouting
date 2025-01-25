@@ -1,5 +1,47 @@
 [
     {
+        "type": "derived",
+        "formula": "3*didLeaveStartingZone + 7*autoCoralL4 + 6*autoCoralL3 + 4*autoCoralL2 + 3*autoCoralL1 + 6*autoAlgaeProc + 4*autoAlgaeNet",
+        "label": "Total Auto Points",
+        "id": "totalAutoPoints"
+    },
+    {
+        "type": "derived",
+        "formula": "5*teleopCoralL4 + 4*teleopCoralL3 + 3*teleopCoralL2 + 2*teleopCoralL1 + 6*teleopAlgaeProc + 4*teleopAlgaeNet + 2*algaeThrownIntoNet",
+        "label": "Total Teleop Points",
+        "id": "totalTeleopPoints"
+    },
+    {
+        "type": "derived",
+        "formula": "multiselect(bargeStatus, 'Not Parked', 0, 'Parked', 2, 'Shallow Cage', 6, 'Deep Cage', 12)",
+        "label": "Total Endgame Points",
+        "id": "totalEndgamePoints"
+    },
+    {
+        "type": "derived",
+        "formula": "totalAutoPoints + totalTeleopPoints + totalEndgamePoints",
+        "label": "Total contributed points",
+        "id": "contributedPoints"
+    },
+    {
+        "type": "derived",
+        "formula": "autoCoralL4 + autoCoralL3 + autoCoralL2 + autoCoralL1",
+        "label": "total Auto Coral",
+        "id": "totalAutoCoral"
+    },
+    {
+        "type": "derived",
+        "formula": "teleopCoralL4 + teleopCoralL3 + teleopCoralL2 + teleopCoralL1",
+        "label": "total Teleop Coral",
+        "id": "totalTeleopCoral"
+    },
+    {
+        "type": "derived",
+        "formula": "totalAutoCoral + totalTeleopCoral",
+        "label": "Total Coral Pieces",
+        "id": "totalCoralPieces"
+    },
+    {
         "type": "h2",
         "label": "Autonomous",
         "id": "autonomouslbl"
@@ -47,13 +89,13 @@
     },
     {
         "type": "counter",
-        "label": "Algae scored in processor",
-        "id": "autoAlgaeProcessor"
+        "label": "Algae scored in the processor",
+        "id": "autoAlgaeProc"
     },
     {
         "type": "counter",
-        "label": "Algae scored in barge",
-        "id": "autoAlgaeBarge"
+        "label": "Algae scored in the net",
+        "id": "autoAlgaeNet"
     },
     {
         "type": "spacer"
@@ -95,18 +137,18 @@
     },
     {
         "type": "counter",
-        "label": "Algae scored in processor",
-        "id": "teleopAlgaeProcessor"
+        "label": "Algae scored in the processor",
+        "id": "teleopAlgaeProc"
     },
     {
         "type": "counter",
-        "label": "Algae thrown into the barge by human",
-        "id": "algaeThrownIntoBarge"
+        "label": "Algae scored in the net",
+        "id": "teleopAlgaeNet"
     },
     {
         "type": "counter",
-        "label": "Algae scored in barge by robot",
-        "id": "teleopAlgaeBarge"
+        "label": "Algae thrown into the net by human",
+        "id": "algaeThrownIntoNet"
     },
     {
         "type": "h3",
@@ -167,9 +209,9 @@
         "id": "recoveredFromFreeze"
     },
     {
-        "type": "counter",
-        "label": "Total yellow cards",
-        "id": "totalYellowCards"
+        "type": "checkbox",
+        "label": "Did they get a yellow card?",
+        "id": "didYellowCard"
     },
     {
         "type": "checkbox",
@@ -179,6 +221,6 @@
     {
         "type": "textblock",
         "label": "Other comments and notes",
-        "id": "commentsNotes"
+        "id": "otherNotes"
     }
 ]

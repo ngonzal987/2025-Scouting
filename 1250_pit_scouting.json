@@ -5,17 +5,10 @@
     "id": "driveBase"
   },
   {
-    "type": "spacer"
-  },
-  {
     "type": "multiselect",
     "label": "Drive base type",
     "id": "driveBaseType",
-    "options": [
-      "Swerve",
-      "Tank",
-      "Other" 
-    ]
+    "options": ["Swerve","Tank","Other"]
   },
   {
     "type": "slider",
@@ -66,6 +59,43 @@
       "max": 5,
       "step": 1
     }
+  },
+  {
+    "type": "multiselect",
+    "label": "Center of Gravity",
+    "options": ["Low","Middle (Kinda Top Heavy)","High (Easy to Fall Over)"],
+    "id": "driveCenterOfGravity"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "h2",
+    "label": "Autonomous",
+    "id": "autonomous"
+  },
+  {
+    "type": "checkbox",
+    "label": "Auto Routines on Processor Side?",
+    "id": "autoProcessorSide"
+  },
+  {
+    "type": "checkbox",
+    "label": "Auto Routines in the Middle?",
+    "id": "autoMiddleSide"
+  },
+  {
+    "type": "checkbox",
+    "label": "Auto Routines on the Cage Side?",
+    "id": "autoCageSide"
+  },
+  {
+    "type": "textblock",
+    "label": "List what they can do in autonomous",
+    "id": "autoRoutineNotes"
+  },
+  {
+    "type": "spacer"
   },
   {
     "type": "textblock",
