@@ -2,44 +2,52 @@
     {
         "type": "derived",
         "formula": "3*didLeaveStartingZone + 7*autoCoralL4 + 6*autoCoralL3 + 4*autoCoralL2 + 3*autoCoralL1 + 6*autoAlgaeProc + 4*autoAlgaeNet",
-        "label": "Total Auto Points",
         "id": "totalAutoPoints"
     },
     {
         "type": "derived",
         "formula": "5*teleopCoralL4 + 4*teleopCoralL3 + 3*teleopCoralL2 + 2*teleopCoralL1 + 6*teleopAlgaeProc + 4*teleopAlgaeNet + 2*algaeThrownIntoNet",
-        "label": "Total Teleop Points",
         "id": "totalTeleopPoints"
     },
     {
         "type": "derived",
         "formula": "multiselect(bargeStatus, 'Not Parked', 0, 'Parked', 2, 'Shallow Cage', 6, 'Deep Cage', 12)",
-        "label": "Total Endgame Points",
         "id": "totalEndgamePoints"
     },
     {
         "type": "derived",
         "formula": "totalAutoPoints + totalTeleopPoints + totalEndgamePoints",
-        "label": "Total contributed points",
         "id": "contributedPoints"
     },
     {
         "type": "derived",
         "formula": "autoCoralL4 + autoCoralL3 + autoCoralL2 + autoCoralL1",
-        "label": "total Auto Coral",
         "id": "totalAutoCoral"
     },
     {
         "type": "derived",
         "formula": "teleopCoralL4 + teleopCoralL3 + teleopCoralL2 + teleopCoralL1",
-        "label": "total Teleop Coral",
         "id": "totalTeleopCoral"
     },
     {
         "type": "derived",
         "formula": "totalAutoCoral + totalTeleopCoral",
-        "label": "Total Coral Pieces",
-        "id": "totalCoralPieces"
+        "id": "totalCoral"
+    },
+    {
+        "type": "derived",
+        "formula": "autoAlgaeProc + autoAlgaeNet",
+        "id": "totalAutoAlgae"
+    },
+    {
+        "type": "derived",
+        "formula": "teleopAlgaeProc + teleopAlgaeNet",
+        "id": "totalTeleopAlgae"
+    },
+    {
+        "type": "derived",
+        "formula": "totalAutoAlgae + totalTeleopAlgae",
+        "id": "totalAlgae"
     },
     {
         "type": "h2",
@@ -54,7 +62,7 @@
     },
     {
         "type": "checkbox",
-        "label": "Did they leave the starting zone?",
+        "label": "Did they end auto outside the starting zone?",
         "id": "didLeaveStartingZone"
     },
     {
