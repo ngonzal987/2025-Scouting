@@ -6,7 +6,7 @@
     },
     {
         "type": "derived",
-        "formula": "5*teleopCoralL4 + 4*teleopCoralL3 + 3*teleopCoralL2 + 2*teleopCoralL1 + 6*teleopAlgaeProc + 4*teleopAlgaeNet + 2*algaeThrownIntoNet",
+        "formula": "5*teleopCoralL4 + 4*teleopCoralL3 + 3*teleopCoralL2 + 2*teleopCoralL1 + 6*teleopAlgaeProc + 4*teleopAlgaeNet + 4*algaeThrownIntoNet",
         "id": "totalTeleopPoints"
     },
     {
@@ -50,7 +50,7 @@
         "id": "totalAlgae"
     },
     {
-        "type": "h2",
+        "type": "header",
         "label": "Autonomous",
         "id": "autonomouslbl"
     },
@@ -66,7 +66,7 @@
         "id": "didLeaveStartingZone"
     },
     {
-        "type": "h3",
+        "type": "subheader",
         "label": "Coral",
         "id": "autocorallbl"
     },
@@ -91,7 +91,7 @@
         "id": "autoCoralL1"
     },
     {
-        "type": "h3",
+        "type": "subheader",
         "label": "Algae",
         "id": "autoalgaelbl"
     },
@@ -109,12 +109,12 @@
         "type": "spacer"
     },
     {
-        "type": "h2",
+        "type": "header",
         "label": "Teleoperated",
         "id": "teleoplbl"
     },
     {
-        "type": "h3",
+        "type": "subheader",
         "label": "Coral",
         "id": "teleopcorallbl"
     },
@@ -139,7 +139,7 @@
         "id": "teleopCoralL1"
     },
     {
-        "type": "h3",
+        "type": "subheader",
         "label": "Algae",
         "id": "teleopalgaelbl"
     },
@@ -159,7 +159,7 @@
         "id": "algaeThrownIntoNet"
     },
     {
-        "type": "h3",
+        "type": "subheader",
         "label": "Defense and Fouls",
         "id": "dandflbl"
     },
@@ -182,12 +182,13 @@
         "type": "spacer"
     },
     {
-        "type": "h2",
+        "type": "header",
         "label": "Endgame",
         "id": "endgameLbl"
     },
     {
         "type": "slider",
+        "variant": "standard",
         "label": "How much time was on the clock when they started climbing?",
         "options": {"min": 0, "max": 150, "step": 5},
         "id": "climbingStartTime"
@@ -202,7 +203,7 @@
         "type": "spacer"
     },
     {
-        "type": "h2",
+        "type": "header",
         "label": "General",
         "id": "generalLbl"
     },

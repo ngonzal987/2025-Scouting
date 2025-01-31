@@ -1,6 +1,6 @@
 [
   {
-    "type": "h2",
+    "type": "header",
     "label": "Drive Base",
     "id": "driveBase"
   },
@@ -12,6 +12,7 @@
   },
   {
     "type": "slider",
+    "variant": "standard",
     "label": "Drive Base Length with bumpers on (inches)",
     "id": "driveBaseLength",
     "options": {
@@ -22,6 +23,7 @@
   },
   {
     "type": "slider",
+    "variant": "standard",
     "label": "Drive Base Width with bumpers on (inches)",
     "id": "driveBaseWidth",
     "options": {
@@ -32,6 +34,7 @@
   },
   {
     "type": "slider",
+    "variant": "standard",
     "label": "Robot Height (inches)",
     "id": "robotHeight",
     "options": {
@@ -42,6 +45,7 @@
   },
   {
     "type": "slider",
+    "variant": "standard",
     "label": "Robot Weight (lbs)",
     "id": "robotWeight",
     "options": {
@@ -52,6 +56,7 @@
   },
   {
     "type": "slider",
+    "variant": "standard",
     "label": "Quality of bumpers?",
     "id": "bumperQuality",
     "options": {
@@ -70,7 +75,7 @@
     "type": "spacer"
   },
   {
-    "type": "h2",
+    "type": "header",
     "label": "Autonomous",
     "id": "autonomous"
   },
