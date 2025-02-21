@@ -6,7 +6,7 @@
     },
     {
         "type": "derived",
-        "formula": "5*teleopCoralL4 + 4*teleopCoralL3 + 3*teleopCoralL2 + 2*teleopCoralL1 + 6*teleopAlgaeProc + 4*teleopAlgaeNet + 4*algaeThrownIntoNet",
+        "formula": "5*teleopCoralL4 + 4*teleopCoralL3 + 3*teleopCoralL2 + 2*teleopCoralL1 + 2*teleopAlgaeProc + 4*teleopAlgaeNet",
         "id": "totalTeleopPoints"
     },
     {
@@ -154,11 +154,6 @@
         "id": "teleopAlgaeNet"
     },
     {
-        "type": "counter",
-        "label": "Algae thrown into the net by human",
-        "id": "algaeThrownIntoNet"
-    },
-    {
         "type": "subheader",
         "label": "Defense and Fouls",
         "id": "dandflbl"
@@ -190,7 +185,7 @@
         "type": "slider",
         "variant": "standard",
         "label": "How much time was on the clock when they started climbing?",
-        "options": {"min": 0, "max": 150, "step": 5},
+        "options": {"min": 0, "max": 30, "step": 1},
         "id": "climbingStartTime"
     },
     {
